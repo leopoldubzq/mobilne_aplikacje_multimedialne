@@ -1,0 +1,6 @@
+framework module Pods_mobilne_aplikacja_multimedialne {
+  umbrella header "Pods-mobilne_aplikacja_multimedialne-umbrella.h"
+
+  export *
+  module * { export * }
+}
