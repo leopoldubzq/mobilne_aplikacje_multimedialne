@@ -1,1 +1,3 @@
-protocol CoordinatorDependenciesProtocol: AnyObject {}
+protocol CoordinatorDependenciesProtocol: AnyObject {
+    var videoManager: Helpers.Video { get }
+}

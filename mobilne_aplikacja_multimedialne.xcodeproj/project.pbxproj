@@ -28,6 +28,15 @@
 		939B419428329D73002E46F1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B419328329D73002E46F1 /* BaseViewModel.swift */; };
 		939B419628329D7A002E46F1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B419528329D7A002E46F1 /* BaseViewController.swift */; };
 		939B419A28329ED8002E46F1 /* IQKeyboardManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B419928329ED8002E46F1 /* IQKeyboardManager+Extension.swift */; };
+		939B41A02832C52D002E46F1 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B419F2832C52D002E46F1 /* VideoManager.swift */; };
+		939B41A52832C725002E46F1 /* HelpersModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B41A42832C725002E46F1 /* HelpersModule.swift */; };
+		939B41AF2832CC67002E46F1 /* short_video_7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41A82832CC67002E46F1 /* short_video_7.mp4 */; };
+		939B41B02832CC67002E46F1 /* short_video_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41A92832CC67002E46F1 /* short_video_4.mp4 */; };
+		939B41B12832CC67002E46F1 /* short_video_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41AA2832CC67002E46F1 /* short_video_3.mp4 */; };
+		939B41B22832CC67002E46F1 /* short_video_6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41AB2832CC67002E46F1 /* short_video_6.mp4 */; };
+		939B41B32832CC67002E46F1 /* short_video_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41AC2832CC67002E46F1 /* short_video_2.mp4 */; };
+		939B41B42832CC67002E46F1 /* short_video_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41AD2832CC67002E46F1 /* short_video_5.mp4 */; };
+		939B41B52832CC67002E46F1 /* short_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939B41AE2832CC67002E46F1 /* short_video_1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +64,15 @@
 		939B419328329D73002E46F1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		939B419528329D7A002E46F1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		939B419928329ED8002E46F1 /* IQKeyboardManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Extension.swift"; sourceTree = "<group>"; };
+		939B419F2832C52D002E46F1 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		939B41A42832C725002E46F1 /* HelpersModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersModule.swift; sourceTree = "<group>"; };
+		939B41A82832CC67002E46F1 /* short_video_7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_7.mp4; sourceTree = "<group>"; };
+		939B41A92832CC67002E46F1 /* short_video_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_4.mp4; sourceTree = "<group>"; };
+		939B41AA2832CC67002E46F1 /* short_video_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_3.mp4; sourceTree = "<group>"; };
+		939B41AB2832CC67002E46F1 /* short_video_6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_6.mp4; sourceTree = "<group>"; };
+		939B41AC2832CC67002E46F1 /* short_video_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_2.mp4; sourceTree = "<group>"; };
+		939B41AD2832CC67002E46F1 /* short_video_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_5.mp4; sourceTree = "<group>"; };
+		939B41AE2832CC67002E46F1 /* short_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = short_video_1.mp4; sourceTree = "<group>"; };
 		F64759FAD3E926DA0D5FF352 /* Pods-mobilne_aplikacja_multimedialne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilne_aplikacja_multimedialne.debug.xcconfig"; path = "Target Support Files/Pods-mobilne_aplikacja_multimedialne/Pods-mobilne_aplikacja_multimedialne.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +118,7 @@
 		939B416128329A24002E46F1 /* mobilne_aplikacja_multimedialne */ = {
 			isa = PBXGroup;
 			children = (
+				939B41A62832CC46002E46F1 /* Resources */,
 				939B419728329ECA002E46F1 /* Utility */,
 				939B418028329B3A002E46F1 /* Coordinator */,
 				939B417F28329AFE002E46F1 /* Default */,
@@ -115,9 +134,9 @@
 		939B417628329A31002E46F1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				939B417B28329A49002E46F1 /* MainView.swift */,
 				939B417728329A3C002E46F1 /* MainViewController.swift */,
 				939B417928329A44002E46F1 /* MainViewModel.swift */,
-				939B417B28329A49002E46F1 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -125,6 +144,7 @@
 		939B417D28329AED002E46F1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				939B419E2832C527002E46F1 /* Helpers */,
 				939B418B28329CBA002E46F1 /* Definitions */,
 				939B417E28329AF2002E46F1 /* Presentation */,
 			);
@@ -166,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				939B418C28329CCA002E46F1 /* PresentationModule.swift */,
+				939B41A42832C725002E46F1 /* HelpersModule.swift */,
 			);
 			path = Definitions;
 			sourceTree = "<group>";
@@ -195,6 +216,36 @@
 				939B419928329ED8002E46F1 /* IQKeyboardManager+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		939B419E2832C527002E46F1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				939B419F2832C52D002E46F1 /* VideoManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		939B41A62832CC46002E46F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				939B41A72832CC52002E46F1 /* ShortVIdeos */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		939B41A72832CC52002E46F1 /* ShortVIdeos */ = {
+			isa = PBXGroup;
+			children = (
+				939B41AE2832CC67002E46F1 /* short_video_1.mp4 */,
+				939B41AC2832CC67002E46F1 /* short_video_2.mp4 */,
+				939B41AA2832CC67002E46F1 /* short_video_3.mp4 */,
+				939B41A92832CC67002E46F1 /* short_video_4.mp4 */,
+				939B41AD2832CC67002E46F1 /* short_video_5.mp4 */,
+				939B41AB2832CC67002E46F1 /* short_video_6.mp4 */,
+				939B41A82832CC67002E46F1 /* short_video_7.mp4 */,
+			);
+			path = ShortVIdeos;
 			sourceTree = "<group>";
 		};
 		E7EB82864016CF6A906BF8A9 /* Frameworks */ = {
@@ -265,9 +316,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939B41AF2832CC67002E46F1 /* short_video_7.mp4 in Resources */,
+				939B41B22832CC67002E46F1 /* short_video_6.mp4 in Resources */,
 				939B416F28329A25002E46F1 /* LaunchScreen.storyboard in Resources */,
+				939B41B12832CC67002E46F1 /* short_video_3.mp4 in Resources */,
+				939B41B52832CC67002E46F1 /* short_video_1.mp4 in Resources */,
 				939B416C28329A25002E46F1 /* Assets.xcassets in Resources */,
+				939B41B42832CC67002E46F1 /* short_video_5.mp4 in Resources */,
+				939B41B02832CC67002E46F1 /* short_video_4.mp4 in Resources */,
 				939B416A28329A24002E46F1 /* Main.storyboard in Resources */,
+				939B41B32832CC67002E46F1 /* short_video_2.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +389,8 @@
 				939B419A28329ED8002E46F1 /* IQKeyboardManager+Extension.swift in Sources */,
 				939B418628329B5F002E46F1 /* Coordinator+ViewFactory.swift in Sources */,
 				939B417828329A3C002E46F1 /* MainViewController.swift in Sources */,
+				939B41A02832C52D002E46F1 /* VideoManager.swift in Sources */,
+				939B41A52832C725002E46F1 /* HelpersModule.swift in Sources */,
 				939B418228329B47002E46F1 /* Coordinator.swift in Sources */,
 				939B419228329D6D002E46F1 /* BaseView.swift in Sources */,
 				939B418828329B6A002E46F1 /* CoordinatorDependencies.swift in Sources */,
