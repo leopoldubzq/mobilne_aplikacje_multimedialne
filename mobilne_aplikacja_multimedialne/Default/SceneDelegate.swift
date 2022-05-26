@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = coordinator?.navigationController
         window?.makeKeyAndVisible()
-        coordinator?.showMainScreen()
+        coordinator?.showMainScreen(onVideoDetailsTap: coordinator?.onVideoDetailsTap)
         
     }
 }

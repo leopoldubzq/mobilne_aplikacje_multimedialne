@@ -1,7 +1,6 @@
 import UIKit
 
 class Coordinator: NSObject, CoordinatorProtocol {
-    
     let navigationController: UINavigationController
     let dependencies: CoordinatorDependenciesProtocol
     
@@ -10,8 +9,8 @@ class Coordinator: NSObject, CoordinatorProtocol {
         navigationController = BaseNavigationController()
     }
     
-    func showMainScreen() {
-        navigationController.setViewControllers([mainVC()], animated: false)
+    func showMainScreen(onVideoDetailsTap: VideoDetailsTapClosure) {
+        navigationController.setViewControllers([mainVC(onVideoDetailsTap: onVideoDetailsTap)], animated: false)
     }
     
     func pop() {
@@ -20,5 +19,9 @@ class Coordinator: NSObject, CoordinatorProtocol {
     
     func dismiss(completion: DismissCallback) {
         navigationController.dismiss(animated: true, completion: nil)
+    }
+    
+    func onVideoDetailsTap(videoTitle: String) {
+        navigationController.pushViewController(detailsVC(videoTitle: videoTitle), animated: true)
     }
 }

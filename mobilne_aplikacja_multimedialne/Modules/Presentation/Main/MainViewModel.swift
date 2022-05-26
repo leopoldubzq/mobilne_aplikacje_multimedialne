@@ -1,43 +1,38 @@
 import Foundation
 import AVFoundation
+import UIKit
+import RxCocoa
+import RxSwift
 
 protocol MainViewModelProtocol {
-    var videos: [String] { get }
-    func createVideoPlayer(name: String, type: VideoType) -> AVPlayer?
-    func createAVLayer() -> AVPlayerLayer?
-    func playVideo()
+    var videos: BehaviorRelay<[VideoDto]> { get }
+    var onVideoDetailsTap: VideoDetailsTapClosure { get }
+    func setupVideos()
 }
 
 class MainViewModel: Main.ViewModel {
     
+    // MARK: - PUBLIC PROPERTIES
+    
+    let onVideoDetailsTap: VideoDetailsTapClosure
+    let videos = BehaviorRelay<[VideoDto]>(value: [])
+    
+    // MARK: - PRIVATE PROPERTIES
+    
     private let coordinator: CoordinatorProtocol
-    private let videoManager: Helpers.Video
     
-    var videos: [String] = []
-    
-    init(coordinator: CoordinatorProtocol, videoManager: Helpers.Video) {
+    init(coordinator: CoordinatorProtocol, onVideoDetailsTap: VideoDetailsTapClosure) {
         self.coordinator = coordinator
-        self.videoManager = videoManager
+        self.onVideoDetailsTap = onVideoDetailsTap
         super.init()
         setupVideos()
     }
     
-    func createVideoPlayer(name: String, type: VideoType) -> AVPlayer? {
-        videoManager.createVideoPlayer(name: name, type: type)
-    }
-    
-    func createAVLayer() -> AVPlayerLayer? {
-        videoManager.createAVLayer()
-    }
-    
-    func playVideo() {
-        videoManager.playVideo()
-    }
-    
-    private func setupVideos() {
-        for index in 1...9 {
-            videos.append("short_video_\(index)")
+    func setupVideos() {
+        var videos: [VideoDto] = []
+        for index in 1...7 {
+            videos.append(VideoDto(title: "short_video_\(index)"))
         }
+        self.videos.accept(videos)
     }
-    
 }
