@@ -31,6 +31,7 @@ class MainViewModel: Main.ViewModel {
     }
     
     func setupVideos() {
+        allVideos.removeAll()
         for index in 1...14 {
             allVideos.append(VideoDto(title: "short_video_\(index)"))
         }
