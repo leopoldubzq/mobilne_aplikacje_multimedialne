@@ -120,7 +120,7 @@ class MainView: Main.View {
 extension MainView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if !searchText.isEmpty {
-            let filteredVideos: [VideoDto] = viewModel.videos.value
+            let filteredVideos: [VideoDto] = viewModel.allVideos
                 .filter({ $0.title.contains(searchText.lowercased()) })
             viewModel.videos.accept(filteredVideos)
         } else {

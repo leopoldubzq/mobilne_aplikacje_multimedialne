@@ -6,6 +6,7 @@ import RxSwift
 
 protocol MainViewModelProtocol {
     var videos: BehaviorRelay<[VideoDto]> { get }
+    var allVideos: [VideoDto] { get }
     var onVideoDetailsTap: VideoDetailsTapClosure { get }
     func setupVideos()
 }
@@ -16,6 +17,7 @@ class MainViewModel: Main.ViewModel {
     
     let onVideoDetailsTap: VideoDetailsTapClosure
     let videos = BehaviorRelay<[VideoDto]>(value: [])
+    var allVideos: [VideoDto] = []
     
     // MARK: - PRIVATE PROPERTIES
     
@@ -29,10 +31,9 @@ class MainViewModel: Main.ViewModel {
     }
     
     func setupVideos() {
-        var videos: [VideoDto] = []
-        for index in 1...7 {
-            videos.append(VideoDto(title: "short_video_\(index)"))
+        for index in 1...14 {
+            allVideos.append(VideoDto(title: "short_video_\(index)"))
         }
-        self.videos.accept(videos)
+        videos.accept(allVideos)
     }
 }
