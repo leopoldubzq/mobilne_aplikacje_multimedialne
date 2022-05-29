@@ -110,7 +110,7 @@ class MainView: Main.View {
         ]
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes(attributes, for: .normal)
         view.showsCancelButton = false
-        view.placeholder = "Wyszukaj film"
+        view.placeholder = "Search videos"
         view.returnKeyType = .search
         view.delegate = self
         return view
